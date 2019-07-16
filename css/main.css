@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* MAIN COLOR */
+/* SECONDARY COLOR */
+/* DARK GRAY, REASON WHY IT'S SET TO #333 IS SO YOU CAN DARKEN IT IF NEEDED USING darken($blk, 10%); FOR EXAMPLE. YOU COULD ALSO USE 2 VARIABLES INSTEAD */
+/* USE THIS TO SET THE BORDER RADIUS FOR BUTTONS */
+html, body {
+  height: 100%;
+}
+
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.flash {
+  display: none;
+}
+
+q,
+blockquote {
+  quotes: "“" "”";
+}
+
+.navbarFixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #0065dd;
+  -webkit-text-fill-color: #0065dd;
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+nav.navbar {
+  z-index: 1000;
+  border: none;
+  border-radius: 0px;
+}
+nav.navbar .navbar-nav > li > a {
+  text-align: center;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+@media (max-width: 767px) {
+  nav.navbar .navbar-nav > li > a {
+    margin-top: 0;
+    padding: 6px 0px;
+    display: inline-block;
+  }
+}
+nav.navbar .navbar-nav > li > a:focus, nav.navbar .navbar-nav > li > a:active {
+  background: transparent;
+  color: #333;
+  outline: 0;
+}
+nav.navbar .navbar-nav > li > a:hover {
+  background: green;
+  color: #fafafa;
+}
+@media (max-width: 1024px) {
+  nav.navbar .navbar-nav > li > a:hover {
+    background: transparent;
+    color: #333;
+    outline: 0;
+  }
+}
+
+.navbar-right {
+  margin-top: 0px;
+}
+
+.navbar-toggle {
+  margin: 20px 15px 8px 0px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/** LOGIN FORM **/
+.btn-default {
+  border: none;
+  border-radius: 0px;
+  background: green;
+  color: #fafafa;
+  padding: 0.5em 2em;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 2em 0em;
+  transition: 0.7s ease all;
+}
+.btn-default:hover {
+  background: #00b300;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .btn-default:hover {
+    background: #007999;
+    color: #fafafa;
+    box-shadow: 0px 0px 5px #333;
+  }
+}
+
+.modal-dialog {
+  max-width: 300px;
+  text-align: center;
+  margin: 6em auto;
+}
+.modal-dialog .close {
+  display: none;
+}
+.modal-dialog .modal-content {
+  color: green;
+}
+.modal-dialog .modal-content h2 {
+  text-align: center;
+}
+.modal-dialog input {
+  border: 1px solid #777;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .modal-dialog input#username,
+  .modal-dialog input#password {
+    font-size: 16px;
+  }
+}
+.modal-dialog button {
+  background: transparent;
+  color: #fafafa;
+  display: block;
+  border: none;
+  padding: 1em 2em;
+  margin: 0 auto;
+  font-size: 18px;
+}
+.modal-dialog button:hover {
+  background: transparent;
+  color: #fff;
+  box-shadow: none;
+  text-shadow: 0px 0px 3px #333;
+  border: none;
+}
+.modal-dialog input[type="submit"] {
+  border: none;
+  border-radius: 0px;
+  background: green;
+  color: #fafafa;
+  padding: 0.5em 2em;
+  font-size: 1.25em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin: 2em 0em;
+  transition: 0.7s ease all;
+  display: block;
+  width: 75%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+.modal-dialog input[type="submit"]:hover {
+  background: #00b300;
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .modal-dialog input[type="submit"]:hover {
+    background: #007999;
+    color: #fafafa;
+    box-shadow: 0px 0px 5px #333;
+  }
+}
+
+.modal-header,
+.modal-footer {
+  background: green;
+  color: #fafafa;
+}
+
+.modal-open {
+  overflow: auto;
+  padding-right: 0px !important;
+}
+
+input#username {
+  margin-bottom: 20px;
+}
+
+/** END LOGIN FORM **/
+footer {
+  padding: 50px 0px 20px;
+  background: green;
+  color: #fafafa;
+  font-size: 15px;
+}
+footer a {
+  color: #fafafa;
+  white-space: nowrap;
+  font-size: 15px;
+}
+@media (max-width: 990px) {
+  footer a {
+    font-size: 13px;
+  }
+}
+footer a:hover {
+  color: white;
+  outline: 0 !important;
+  text-decoration: none;
+}
+footer a:focus {
+  color: #fafafa;
+  outline: 0 !important;
+  text-decoration: none;
+}
+footer p {
+  font-size: 15px;
+}
+@media (max-width: 990px) {
+  footer p {
+    font-size: 13px;
+  }
+}
+
+input#username,
+input#password {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  input#username,
+  input#password {
+    font-size: 16px;
+  }
+}
+
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  outline: 0 !important;
+}
+
+.logo {
+  max-width: 250px;
+  padding: 0.5em;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    max-width: 175px;
+  }
+
+  .navbar-header a {
+    float: left;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    max-width: 125px;
+  }
+
+  .navbar-toggle {
+    margin-top: 5px;
+  }
+}
+.top-pad {
+  padding: 3em;
+  background: white;
+}
+@media (max-width: 990px) {
+  .top-pad {
+    padding: 1em;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .flex {
+    display: block;
+    /* may need to be inline-block */
+  }
+}
+
+.terms p,
+.privacy p {
+  font-size: 16px;
+}
+.terms ol li,
+.privacy ol li {
+  font-size: 16px;
+}
+.terms ol ol li,
+.privacy ol ol li {
+  font-size: 15px;
+}
