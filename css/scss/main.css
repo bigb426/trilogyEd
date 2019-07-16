@@ -334,7 +334,9 @@ form {
 
 .disclaimer {
   margin-top: 75px;
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-right: 0px;
+  margin-left: 0px; }
   @media (max-width: 1023px) {
     .disclaimer {
       margin: 15px; } }
